@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { navLinks, navLinks_sign } from "../constants";
-import { close, logo, menu, TechTrov } from "../assets";
+import { close, menu, TechTrov } from "../assets";
 import styles from "../style";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { signout } from "../features/user/userSlice";
 
 function Navbar() {
+  const dispatch = useDispatch();
   const [cart_toggle, setCart_toggle] = useState(false);
   const [favorite_toggle, setFavorite_toggle] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -15,6 +17,11 @@ function Navbar() {
   const { count_favorite, products_favorite } = useSelector(
     ({ favoriteCounter }) => favoriteCounter
   );
+
+  const signoutHandler=()=>{
+    dispatch(signout()); 
+    alert("Sign out Successfully!!");
+  }
   return (
     <nav className="w-full flex  py-6 justify-between items-center navbar ">
       <img src={TechTrov} alt="TechTrov logo" className=" w-[140] h-[36px]" />
@@ -126,6 +133,18 @@ function Navbar() {
             </ul>
           </div>
         </li>
+        <li
+              className={`font-poppins font-normal cursor-pointer text-[16px] relative mr-10  text-white`}
+            >
+              <NavLink
+                to="/"
+                onClick={ signoutHandler }
+              >
+                Sign out
+              </NavLink>
+              
+             
+            </li>
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
@@ -246,6 +265,18 @@ function Navbar() {
                   ))}
                 </ul>
               </div>
+            </li>
+            <li
+              className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 relative text-white`}
+            >
+              <NavLink
+                to="/"
+                onClick={ signoutHandler }
+              >
+                Sign out
+              </NavLink>
+              
+             
             </li>
           </ul>
         </div>

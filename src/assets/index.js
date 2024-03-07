@@ -5,7 +5,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
 import discount from "./Discount.svg";
-
 import bro from "./bro.png";
 import amico from "./amico.png";
 import laptop1 from "./laptop1.jpg";
@@ -22,7 +21,6 @@ import TechTrov from "./TechTrov.png";
 import herolaptope2 from "./herolaptope2.jpg";
 export {
   herolaptope2,
-  unsplash_laptope,
   TechTrov,
   laptop10,
   laptop9,
@@ -35,32 +33,11 @@ export {
   laptop2,
   laptop1,
   amico,
-  airbnb1,
   bro,
-  heroLaptope,
-  airbnb,
-  bill,
-  binance,
-  card,
-  coinbase,
-  dropbox,
-  logo,
-  quotes,
-  robot,
   send,
   shield,
-  star,
   menu,
   close,
-  google,
-  apple,
   arrowUp,
   discount,
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-  people01,
-  people02,
-  people03,
 };

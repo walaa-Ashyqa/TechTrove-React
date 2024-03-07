@@ -3,10 +3,7 @@ import styles from "../style";
 import GetStarted from "./GetStarted";
 import {
   discount,
-  robot,
-  heroLaptope,
   herolaptope2,
-  unsplash_laptope,
 } from "../assets";
 function Hero() {
   return (

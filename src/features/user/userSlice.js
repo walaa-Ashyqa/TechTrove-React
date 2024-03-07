@@ -11,7 +11,12 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    
+    signout:(state)=> {
+      state.name="";
+      state. email="";
+      state.password="";
+      state.userflag=false;
+     },
     getuser: (state, action) => {
         if(state.email === action.payload)
         userflag=true;
@@ -30,6 +35,6 @@ export const userSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { getuser, setpassword,setemail, setname} = userSlice.actions
+export const { getuser, setpassword,setemail, setname,signout} = userSlice.actions
 
 export default userSlice.reducer

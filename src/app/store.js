@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cartCounterSlice from '../features/cartcounter/cartCounterSlice.js';
+import cartCounterSlice from '../features/cartCounter/cartCounterSlice.js';
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
 import userSlice from '../features/user/userSlice';

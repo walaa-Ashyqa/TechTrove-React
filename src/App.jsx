@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import styles from "./style";
+import styles from "./style.js";
 
  
 import { Route, Routes } from "react-router-dom";
-import Signin from './pages/Signin';
-import Signup from './pages/Signup';
-import Home from './pages/Home';
-import AppLayout from './components/AppLayout';
+import Signin from './pages/Signin.jsx';
+import Signup from './pages/Signup.jsx';
+import Home from './pages/Home.jsx';
+import AppLayout from './components/AppLayout.jsx';
 function App() {
   const [count, setCount] = useState(0)
 

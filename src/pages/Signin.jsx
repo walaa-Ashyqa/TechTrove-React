@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import styles, { layout } from "../style";
-import Button from "../components/Button";
+import styles, { layout } from "../style.js";
+import Button from "../components/Button.jsx";
 import { bro } from "../assets/";
 import { useDispatch, useSelector } from "react-redux";
 import { setpassword, setemail, setname  } from "../features/user/userSlice";

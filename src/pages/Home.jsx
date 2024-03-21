@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/Hero";
-import styles from "../style";
-import Product from "../components/product";
-import Footer from "../components/Footer";
+import Hero from "../components/Hero.jsx";
+import styles from "../style.js";
+import Product from "../components/Product.jsx";
+import Footer from "../components/Footer.jsx";
 function Home() {
   return (
     <>

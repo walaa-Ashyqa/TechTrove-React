@@ -6,10 +6,10 @@ import { prodects } from "../constants";
 import { useDispatch, useSelector } from "react-redux";
 import {
   increment,
-  incrementByAmount,
-} from "../features/cartcounter/cartCounterSlice";
-import { addFavorite } from "../features/favoriteCounter/favoriteCounterSlice";
-import { resetCart } from "../features/cartcounter/cartCounterSlice";
+  incrementByAmount,resetCart
+} from "../features/cartCounter/cartCounterSlice.js";
+import { addFavorite } from "../features/favoriteCounter/favoriteCounterSlice.js";
+ 
 function Product() {
   const dispatch = useDispatch();
   // ============== State ==============
